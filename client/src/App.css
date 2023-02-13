@@ -1,0 +1,122 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.message_area {
+  background-color: rgb(97, 151, 227);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  overflow: scroll;
+}
+
+.room_info{
+  font-size: 30px;
+background-color: white;
+width: 80%;
+text-align: center;
+padding : 5px 0px;
+border-radius: 10px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.messages {
+  width: 80%;
+  height: 75%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow-y: scroll;  
+}
+
+.my_message_info{
+  margin:10px 30px 0px 30px;
+  float:right;
+  clear: both;
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+.other_message_info{
+  margin:10px 30px 0px 30px;
+  float:left;
+  clear: both;
+  font-family:'Times New Roman', Times, serif
+
+}
+
+.my_message{
+   max-width: 60%;
+   width:fit-content;
+   height: fit-content;
+    background-color: rgb(119, 119, 226);
+    font-size: 20px;
+    margin:0px 20px 10px 20px;
+    padding : 6px 20px;
+    border-radius: 10px;
+    color:white;
+    float:right;
+    clear: both;
+}
+
+.other_message{
+  width:fit-content;
+  max-width: 70%;
+  right : 20px;
+  top :10px;
+  background-color: rgb(28, 119, 46);
+  font-size: 20px;
+  margin:0px 20px 10px 20px;
+  padding : 6px 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  color:white;
+  float:left;
+  clear: both;
+}
+
+.create_message {
+  display: flex;
+  width: 100%;
+  height: 8%;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_message {
+  outline: none;
+  width: 70%;
+  height: 60%;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.send_message {
+  cursor: pointer;
+  width: 8%;
+  height: 60%;
+  font-size: 24px;
+  border: none;
+  background: rgb(2, 166, 2);
+  border-radius: 8px;
+  margin-left: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.send_message:hover{
+  background-color: green;
+
+}
